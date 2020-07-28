@@ -1,0 +1,26 @@
+.category-page {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    h1 {
+        text-transform: uppercase;
+        color: #000;
+        font-size: 20px;
+        margin-bottom: 20px;
+        border-bottom: #000 solid 1px;
+        padding-bottom: 20px;
+    }
+    
+}
+.categoryItems {
+    &>div {
+     
+        a {
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

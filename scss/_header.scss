@@ -1,0 +1,110 @@
+.theme-dark .header, .header-dark .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+padding:15px;
+z-index: 99999999;
+display: flex;
+align-items: center;
+justify-content: space-between;
+&__left {
+    display: flex;
+align-items: center;
+    .menu-toggler {
+        background: transparent;
+        color: $white;
+        font-size: 20px;
+        border: 0 !important;
+        outline: none !important;
+        display: flex;
+align-items: center;
+margin-right: 10px;
+text-shadow: 1px 1px 5px #000;
+    }
+    .logo {
+        width: 40px;
+        display: inline-block;
+        img {
+            width: 100%;
+        }
+        .logo-light {
+            display: block !important;
+        }
+        
+    }
+}
+&__right {
+    display: flex;
+    align-items: center;
+    .search-toggler {
+        background: transparent;
+        color: $white;
+        font-size: 20px;
+        border: 0 !important;
+        outline: none !important;
+        display: flex;
+        align-items: center;
+        text-shadow: 1px 1px 5px #000;
+    }
+}
+}
+
+
+.theme-light .header, .header-light .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+padding:15px;
+z-index: 99999999;
+display: flex;
+align-items: center;
+justify-content: space-between;
+&__left {
+    display: flex;
+align-items: center;
+    .menu-toggler {
+        background: transparent;
+        color: $black;
+        font-size: 20px;
+        border: 0 !important;
+        outline: none !important;
+        display: flex;
+align-items: center;
+margin-right: 10px;
+
+    }
+    .logo {
+        width: 40px;
+        display: inline-block;
+        img {
+            width: 100%;
+        }
+        .logo-dark {
+            display: block !important;
+        }
+        
+    }
+}
+&__right {
+    display: flex;
+    align-items: center;
+    .search-toggler {
+        background: transparent;
+        color: $black;
+        font-size: 20px;
+        border: 0 !important;
+        outline: none !important;
+        display: flex;
+        align-items: center;
+
+    }
+}
+}
