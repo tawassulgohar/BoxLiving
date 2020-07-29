@@ -12334,12 +12334,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   outline: none !important;
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 2px;
   text-shadow: 1px 1px 5px #000;
 }
 
 .theme-dark .header__left .logo, .header-dark .header__left .logo {
-  width: 40px;
+  width: 30px;
   display: inline-block;
 }
 
@@ -12372,7 +12372,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+  /* IE6-9 */
   padding: 15px;
   z-index: 99999999;
   display: flex;
@@ -12393,11 +12399,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   outline: none !important;
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 2px;
 }
 
 .theme-light .header__left .logo, .header-light .header__left .logo {
-  width: 40px;
+  width: 30px;
   display: inline-block;
 }
 
@@ -12422,6 +12428,117 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   outline: none !important;
   display: flex;
   align-items: center;
+}
+
+/* sliding side menu */
+.menuBackground {
+  position: fixed;
+  background: #000;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  z-index: 99999999999;
+}
+
+.sideMenu {
+  position: fixed;
+  width: 100%;
+  max-width: 320px;
+  left: -320px;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #fff;
+  color: #000;
+  z-index: 999999999999;
+  transition: all 500ms ease;
+}
+
+.sideMenu .closeMenu {
+  background: transparent !important;
+  padding: 15px 15px 8px 15px;
+  color: #000;
+  border: none !important;
+  font-size: 20px;
+  outline: none !important;
+}
+
+.sideMenu ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sideMenu ul li {
+  list-style-type: none;
+  display: block;
+  border-bottom: #ececec solid 1px;
+}
+
+.sideMenu ul li a {
+  display: block;
+  padding: 8px 15px;
+  color: #444444;
+}
+
+.sideMenu ul li:hover a, .sideMenu ul li.active a {
+  color: #000;
+  text-decoration: none;
+}
+
+.menuOpen .menuBackground {
+  display: block;
+}
+
+.menuOpen .sideMenu {
+  left: 0;
+}
+
+/* search popup */
+.searchPopup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #fff;
+  padding: 15px;
+  padding-top: 60px;
+  display: none;
+  z-index: 99999999999;
+}
+
+.searchPopup .closeSearch {
+  background: transparent !important;
+  padding: 15px 15px 8px 15px;
+  color: #000;
+  border: none !important;
+  font-size: 20px;
+  outline: none !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.searchPopup form {
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.searchPopup form input {
+  box-shadow: none !important;
+  border-color: #ccc !important;
+}
+
+.searchOpen .searchPopup {
+  display: block;
 }
 
 .btn {
@@ -12530,133 +12647,133 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @-webkit-keyframes noise-anim {
   0% {
-    clip: rect(61px, 9999px, 39px, 0);
+    clip: rect(38px, 9999px, 71px, 0);
   }
   5% {
-    clip: rect(47px, 9999px, 91px, 0);
+    clip: rect(19px, 9999px, 65px, 0);
   }
   10% {
-    clip: rect(59px, 9999px, 13px, 0);
+    clip: rect(58px, 9999px, 14px, 0);
   }
   15% {
-    clip: rect(31px, 9999px, 13px, 0);
+    clip: rect(65px, 9999px, 92px, 0);
   }
   20% {
-    clip: rect(29px, 9999px, 83px, 0);
+    clip: rect(85px, 9999px, 14px, 0);
   }
   25% {
-    clip: rect(36px, 9999px, 99px, 0);
+    clip: rect(75px, 9999px, 82px, 0);
   }
   30% {
-    clip: rect(35px, 9999px, 64px, 0);
+    clip: rect(15px, 9999px, 51px, 0);
   }
   35% {
-    clip: rect(39px, 9999px, 75px, 0);
+    clip: rect(99px, 9999px, 70px, 0);
   }
   40% {
-    clip: rect(26px, 9999px, 24px, 0);
+    clip: rect(53px, 9999px, 98px, 0);
   }
   45% {
-    clip: rect(48px, 9999px, 40px, 0);
+    clip: rect(54px, 9999px, 21px, 0);
   }
   50% {
-    clip: rect(81px, 9999px, 41px, 0);
+    clip: rect(71px, 9999px, 29px, 0);
   }
   55% {
-    clip: rect(30px, 9999px, 29px, 0);
+    clip: rect(81px, 9999px, 16px, 0);
   }
   60% {
-    clip: rect(34px, 9999px, 91px, 0);
+    clip: rect(53px, 9999px, 70px, 0);
   }
   65% {
-    clip: rect(78px, 9999px, 8px, 0);
+    clip: rect(74px, 9999px, 38px, 0);
   }
   70% {
-    clip: rect(64px, 9999px, 67px, 0);
+    clip: rect(64px, 9999px, 68px, 0);
   }
   75% {
-    clip: rect(35px, 9999px, 100px, 0);
+    clip: rect(26px, 9999px, 87px, 0);
   }
   80% {
-    clip: rect(95px, 9999px, 6px, 0);
+    clip: rect(24px, 9999px, 29px, 0);
   }
   85% {
-    clip: rect(3px, 9999px, 25px, 0);
+    clip: rect(30px, 9999px, 94px, 0);
   }
   90% {
-    clip: rect(12px, 9999px, 31px, 0);
+    clip: rect(10px, 9999px, 25px, 0);
   }
   95% {
-    clip: rect(89px, 9999px, 45px, 0);
+    clip: rect(64px, 9999px, 76px, 0);
   }
   100% {
-    clip: rect(82px, 9999px, 99px, 0);
+    clip: rect(24px, 9999px, 25px, 0);
   }
 }
 
 @keyframes noise-anim {
   0% {
-    clip: rect(61px, 9999px, 39px, 0);
+    clip: rect(38px, 9999px, 71px, 0);
   }
   5% {
-    clip: rect(47px, 9999px, 91px, 0);
+    clip: rect(19px, 9999px, 65px, 0);
   }
   10% {
-    clip: rect(59px, 9999px, 13px, 0);
+    clip: rect(58px, 9999px, 14px, 0);
   }
   15% {
-    clip: rect(31px, 9999px, 13px, 0);
+    clip: rect(65px, 9999px, 92px, 0);
   }
   20% {
-    clip: rect(29px, 9999px, 83px, 0);
+    clip: rect(85px, 9999px, 14px, 0);
   }
   25% {
-    clip: rect(36px, 9999px, 99px, 0);
+    clip: rect(75px, 9999px, 82px, 0);
   }
   30% {
-    clip: rect(35px, 9999px, 64px, 0);
+    clip: rect(15px, 9999px, 51px, 0);
   }
   35% {
-    clip: rect(39px, 9999px, 75px, 0);
+    clip: rect(99px, 9999px, 70px, 0);
   }
   40% {
-    clip: rect(26px, 9999px, 24px, 0);
+    clip: rect(53px, 9999px, 98px, 0);
   }
   45% {
-    clip: rect(48px, 9999px, 40px, 0);
+    clip: rect(54px, 9999px, 21px, 0);
   }
   50% {
-    clip: rect(81px, 9999px, 41px, 0);
+    clip: rect(71px, 9999px, 29px, 0);
   }
   55% {
-    clip: rect(30px, 9999px, 29px, 0);
+    clip: rect(81px, 9999px, 16px, 0);
   }
   60% {
-    clip: rect(34px, 9999px, 91px, 0);
+    clip: rect(53px, 9999px, 70px, 0);
   }
   65% {
-    clip: rect(78px, 9999px, 8px, 0);
+    clip: rect(74px, 9999px, 38px, 0);
   }
   70% {
-    clip: rect(64px, 9999px, 67px, 0);
+    clip: rect(64px, 9999px, 68px, 0);
   }
   75% {
-    clip: rect(35px, 9999px, 100px, 0);
+    clip: rect(26px, 9999px, 87px, 0);
   }
   80% {
-    clip: rect(95px, 9999px, 6px, 0);
+    clip: rect(24px, 9999px, 29px, 0);
   }
   85% {
-    clip: rect(3px, 9999px, 25px, 0);
+    clip: rect(30px, 9999px, 94px, 0);
   }
   90% {
-    clip: rect(12px, 9999px, 31px, 0);
+    clip: rect(10px, 9999px, 25px, 0);
   }
   95% {
-    clip: rect(89px, 9999px, 45px, 0);
+    clip: rect(64px, 9999px, 76px, 0);
   }
   100% {
-    clip: rect(82px, 9999px, 99px, 0);
+    clip: rect(24px, 9999px, 25px, 0);
   }
 }
 
@@ -12675,133 +12792,133 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 @-webkit-keyframes noise-anim-2 {
   0% {
-    clip: rect(54px, 9999px, 58px, 0);
+    clip: rect(49px, 9999px, 74px, 0);
   }
   5% {
-    clip: rect(69px, 9999px, 47px, 0);
+    clip: rect(51px, 9999px, 41px, 0);
   }
   10% {
-    clip: rect(27px, 9999px, 76px, 0);
+    clip: rect(23px, 9999px, 89px, 0);
   }
   15% {
-    clip: rect(77px, 9999px, 22px, 0);
+    clip: rect(78px, 9999px, 50px, 0);
   }
   20% {
-    clip: rect(64px, 9999px, 23px, 0);
+    clip: rect(23px, 9999px, 9px, 0);
   }
   25% {
-    clip: rect(51px, 9999px, 25px, 0);
+    clip: rect(37px, 9999px, 90px, 0);
   }
   30% {
-    clip: rect(26px, 9999px, 76px, 0);
+    clip: rect(59px, 9999px, 64px, 0);
   }
   35% {
-    clip: rect(90px, 9999px, 74px, 0);
+    clip: rect(37px, 9999px, 55px, 0);
   }
   40% {
-    clip: rect(85px, 9999px, 34px, 0);
+    clip: rect(59px, 9999px, 35px, 0);
   }
   45% {
-    clip: rect(8px, 9999px, 63px, 0);
+    clip: rect(63px, 9999px, 86px, 0);
   }
   50% {
-    clip: rect(40px, 9999px, 63px, 0);
+    clip: rect(62px, 9999px, 49px, 0);
   }
   55% {
-    clip: rect(8px, 9999px, 36px, 0);
+    clip: rect(86px, 9999px, 29px, 0);
   }
   60% {
-    clip: rect(32px, 9999px, 64px, 0);
+    clip: rect(26px, 9999px, 2px, 0);
   }
   65% {
-    clip: rect(41px, 9999px, 23px, 0);
+    clip: rect(67px, 9999px, 26px, 0);
   }
   70% {
-    clip: rect(45px, 9999px, 45px, 0);
+    clip: rect(28px, 9999px, 54px, 0);
   }
   75% {
-    clip: rect(11px, 9999px, 83px, 0);
+    clip: rect(75px, 9999px, 6px, 0);
   }
   80% {
-    clip: rect(10px, 9999px, 72px, 0);
+    clip: rect(95px, 9999px, 12px, 0);
   }
   85% {
-    clip: rect(90px, 9999px, 60px, 0);
+    clip: rect(24px, 9999px, 34px, 0);
   }
   90% {
-    clip: rect(39px, 9999px, 18px, 0);
+    clip: rect(10px, 9999px, 22px, 0);
   }
   95% {
-    clip: rect(61px, 9999px, 11px, 0);
+    clip: rect(10px, 9999px, 92px, 0);
   }
   100% {
-    clip: rect(86px, 9999px, 68px, 0);
+    clip: rect(56px, 9999px, 28px, 0);
   }
 }
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(54px, 9999px, 58px, 0);
+    clip: rect(49px, 9999px, 74px, 0);
   }
   5% {
-    clip: rect(69px, 9999px, 47px, 0);
+    clip: rect(51px, 9999px, 41px, 0);
   }
   10% {
-    clip: rect(27px, 9999px, 76px, 0);
+    clip: rect(23px, 9999px, 89px, 0);
   }
   15% {
-    clip: rect(77px, 9999px, 22px, 0);
+    clip: rect(78px, 9999px, 50px, 0);
   }
   20% {
-    clip: rect(64px, 9999px, 23px, 0);
+    clip: rect(23px, 9999px, 9px, 0);
   }
   25% {
-    clip: rect(51px, 9999px, 25px, 0);
+    clip: rect(37px, 9999px, 90px, 0);
   }
   30% {
-    clip: rect(26px, 9999px, 76px, 0);
+    clip: rect(59px, 9999px, 64px, 0);
   }
   35% {
-    clip: rect(90px, 9999px, 74px, 0);
+    clip: rect(37px, 9999px, 55px, 0);
   }
   40% {
-    clip: rect(85px, 9999px, 34px, 0);
+    clip: rect(59px, 9999px, 35px, 0);
   }
   45% {
-    clip: rect(8px, 9999px, 63px, 0);
+    clip: rect(63px, 9999px, 86px, 0);
   }
   50% {
-    clip: rect(40px, 9999px, 63px, 0);
+    clip: rect(62px, 9999px, 49px, 0);
   }
   55% {
-    clip: rect(8px, 9999px, 36px, 0);
+    clip: rect(86px, 9999px, 29px, 0);
   }
   60% {
-    clip: rect(32px, 9999px, 64px, 0);
+    clip: rect(26px, 9999px, 2px, 0);
   }
   65% {
-    clip: rect(41px, 9999px, 23px, 0);
+    clip: rect(67px, 9999px, 26px, 0);
   }
   70% {
-    clip: rect(45px, 9999px, 45px, 0);
+    clip: rect(28px, 9999px, 54px, 0);
   }
   75% {
-    clip: rect(11px, 9999px, 83px, 0);
+    clip: rect(75px, 9999px, 6px, 0);
   }
   80% {
-    clip: rect(10px, 9999px, 72px, 0);
+    clip: rect(95px, 9999px, 12px, 0);
   }
   85% {
-    clip: rect(90px, 9999px, 60px, 0);
+    clip: rect(24px, 9999px, 34px, 0);
   }
   90% {
-    clip: rect(39px, 9999px, 18px, 0);
+    clip: rect(10px, 9999px, 22px, 0);
   }
   95% {
-    clip: rect(61px, 9999px, 11px, 0);
+    clip: rect(10px, 9999px, 92px, 0);
   }
   100% {
-    clip: rect(86px, 9999px, 68px, 0);
+    clip: rect(56px, 9999px, 28px, 0);
   }
 }
 
@@ -12866,7 +12983,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .theme-light .footer, .footer-light .footer {
-  background-color: #fff;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
   position: fixed;
   bottom: 0;
   left: 0;
