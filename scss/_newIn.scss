@@ -411,6 +411,20 @@
         padding-top: 100px;
         padding-bottom: 30px;
     }
+    .contact-form {
+        width:100%;
+        text-align: center;
+        input {
+            background: transparent;
+            border:none;
+            border-bottom:#000 solid 1px;
+            box-shadow: none !important;
+            text-align: center;
+            width:100%;
+            margin-bottom: 20px;
+            padding:10px;
+        }
+    }
     ul {
 
         padding: 0px;
@@ -419,7 +433,6 @@
             list-style-type: none;
             text-decoration: none;
             padding: 1px 0px;
-            margin-left: 27px;
             color: black;
             text-decoration: none;
             font-size: 16px;
@@ -432,7 +445,7 @@
     }
     .flag-ship-store,.HQ-design-studio {
         margin: 8px 0;
-        margin-left: 27px;
+
         
         h5{
             color: black;
@@ -455,7 +468,7 @@
             text-decoration: none;
             margin: 4px 0px;
             display: block;
-            margin-left: 27px;
+    
         }
     }
     @media (min-width:768px) {
@@ -465,18 +478,18 @@
             }
             ul{
                 li{
-                    margin-left: 40px;
+             
                 }
             }
             .flag-ship-store,.HQ-design-studio {
                 margin: 8px 0;
-                margin-left: 40px;
+            
                 
             }
             .info-social {
                 padding-top: 100px;
                 a {
-                    margin-left: 40px;
+                  
                 }
             }
         }
