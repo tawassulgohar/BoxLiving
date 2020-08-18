@@ -19,7 +19,8 @@ align-items: center;
     .menu-toggler {
         background: transparent;
         color: $white;
-        font-size: 20px;
+        font-size: 16px;
+        padding-left: 0px;
         border: 0 !important;
         outline: none !important;
         display: flex;
@@ -28,7 +29,7 @@ margin-right: 2px;
 text-shadow: 1px 1px 5px #000;
     }
     .logo {
-        width: 30px;
+        width: 20px;
         display: inline-block;
         img {
             width: 100%;
@@ -45,11 +46,12 @@ text-shadow: 1px 1px 5px #000;
     .search-toggler {
         background: transparent;
         color: $white;
-        font-size: 20px;
+        font-size: 16px;
         border: 0 !important;
         outline: none !important;
         display: flex;
         align-items: center;
+        padding-right: 0px;
         text-shadow: 1px 1px 5px #000;
     }
 }
@@ -78,7 +80,8 @@ align-items: center;
     .menu-toggler {
         background: transparent;
         color: $black;
-        font-size: 20px;
+        font-size: 16px;
+        padding-left: 0px;
         border: 0 !important;
         outline: none !important;
         display: flex;
@@ -87,7 +90,7 @@ margin-right: 2px;
 
     }
     .logo {
-        width: 30px;
+        width: 20px;
         display: inline-block;
         img {
             width: 100%;
@@ -104,11 +107,12 @@ margin-right: 2px;
     .search-toggler {
         background: transparent;
         color: $black;
-        font-size: 20px;
+        font-size: 16px;
         border: 0 !important;
         outline: none !important;
         display: flex;
         align-items: center;
+        padding-right: 0px;
 
     }
 }
