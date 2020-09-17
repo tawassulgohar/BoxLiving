@@ -19,6 +19,8 @@
             text-align: center;
             vertical-align: middle;
             display: table-cell;
+            text-transform: uppercase;
+            font-weight: 600;
         }
     }
     @media (orientation: landscape) {
@@ -494,4 +496,283 @@
             }
         }
     }
+}
+/*mediaPage*/
+.mediaList{
+
+    a{
+        display: table;
+        min-height: 50vh;
+        width: 100%;
+        background-size: cover !important;
+        background-position: center !important;
+        padding:30px;
+        text-decoration: none !important;
+
+        
+        span{
+            width: 100%;
+            font-size: 20px;
+            line-height: 1.2;
+            color: #fff!important;
+            text-shadow: 1px 1px 1px #000;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+        }
+    }
+
+      @media (min-width: 768px) {
+        & {
+           display: flex;
+            a {
+                width: 50%;
+                height: 100vh;
+                span {
+                        font-size: 78px;
+                }
+            }
+        }
+      }
+}
+/*mediaDeatail */
+.mediaDetail {
+    img {
+        width: 100%;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    .mediaDetail-description {
+        background-color: #fff;
+            p {
+                font-size: 36px;
+                text-align: center;
+                color: black;
+                padding: 30px 0px;
+                border-bottom: 3px solid black;
+                border-top: 1px solid grey;
+                margin-bottom: 0px;
+
+            }
+        }
+
+      @media (max-width: 767px) {
+        & {
+           
+            img {
+                width: 100%;
+             
+               
+            }
+            .mediaDetail-description {
+            
+                    p {
+                        font-size: 26px;
+        
+                    }
+                }
+        }
+      }
+}
+/*event-page */
+.event {
+    overflow-x: hidden;
+    .event-description {
+        background-color: #fff;
+            p {
+                font-size: 36px;
+                text-align: center;
+                color: black;
+                padding: 60px 20px;
+                border-top: 2px solid black;
+                margin-bottom: 0px;
+                text-transform: uppercase;
+
+            }
+            
+        }
+        .slider-img{ 
+            vertical-align: middle;
+            img{
+           
+        }
+    }
+        .slider-img, .slider-nav-img{ 
+            img {
+            width: 100%;
+             }
+        }
+        .slick-dotted.slick-slider {
+            border-top: 1px solid black;
+            margin-bottom:0px ;
+
+        }
+        .slick-dots{
+            display: none;
+        }
+        .slick-next {
+            right:15px;
+            width: 35px;
+    height: 35px;
+    border:#fff solid 2px;
+   border-radius: 50%;
+   padding-left:5px;
+        &:before {
+            content: '⮞';
+            font-size: 25px;
+            color:#fff;
+            opacity: 1;
+        }
+        &:hover {
+            background: rgba(0, 0, 0, 0.26);
+        }
+    }
+        .slick-prev{
+            left:15px;
+            width: 35px;
+    height: 35px;
+    border:#fff solid 2px;
+    border-radius: 50%;
+    z-index: 2;
+    padding-right: 5px;
+        &:before {
+            content: '⮜';
+            font-size: 25px;
+            color:#fff;
+            opacity: 1;
+        }
+        &:hover {
+            background: rgba(0, 0, 0, 0.26);
+        }
+    }
+      @media (max-width: 767px) {
+        & { 
+            img {
+                width: 100%;
+               
+            }
+            .slider-img img {
+                width: 100%;
+               
+            }
+            .slider-nav-img img {
+                width: 100%;
+               
+            }
+            .event-description {
+            
+                    p {
+                        font-size: 20px;
+                    }
+                }
+        }
+      }
+}
+
+.portfolioList{
+
+    a{
+        display: table;
+        min-height: 25vh;
+        width: 100%;
+        background-size: cover !important;
+        background-position: center !important;
+        padding:30px;
+        text-decoration: none !important;
+
+        
+        span{
+            width: 100%;
+            font-size: 20px;
+            line-height: 1.2;
+            color: #fff!important;
+            text-shadow: 1px 1px 1px #000;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+    @media (orientation: landscape) {
+        & {
+            a {
+                height: 50vh;
+            }
+        }
+      }
+      @media (min-width: 768px) {
+        & {
+            a {
+                span {
+                        font-size: 78px;
+                }
+            }
+        }
+      }
+}
+//portfolio.SCSS//
+
+.portfolioSlider {
+ 
+        .slider-img{ 
+            vertical-align: middle;
+            img{
+           
+        }
+    }
+
+        .slick-next {
+            right:15px;
+            width: 35px;
+    height: 35px;
+    border:#fff solid 2px;
+   border-radius: 50%;
+   padding-left:5px;
+   background: rgba(0, 0, 0, 0.26);
+        &:before {
+            content: '⮞';
+            font-size: 25px;
+            color:#fff;
+            opacity: 1;
+
+        }
+        &:hover {
+            background: rgba(0, 0, 0, 0.50);
+        }
+    }
+        .slick-prev{
+            left:15px;
+            width: 35px;
+    height: 35px;
+    border:#fff solid 2px;
+    border-radius: 50%;
+    z-index: 2;
+    padding-right: 5px;
+    background: rgba(0, 0, 0, 0.26);
+        &:before {
+            content: '⮜';
+            font-size: 25px;
+            color:#fff;
+            opacity: 1;
+        }
+        &:hover {
+            background: rgba(0, 0, 0, 0.50);
+        }
+    }
+  
+}
+.portfolioDescription {
+    padding: 40px;
+    h3 {
+
+        color:#000;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        color: #000;
+        font-size: 16px;
+        font-weight: 400;
+    }   
 }
